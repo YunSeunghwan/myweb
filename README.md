@@ -1,2 +1,1 @@
-# myweb
-# this is my website to learn making a website. please enjoy my record!
+this is my website to learn making a website. please enjoy my record!

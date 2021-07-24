@@ -1,0 +1,32 @@
+*{
+  /*border : 1px solid red;*/
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #f3f1e9;
+  height: 100%;
+}
+
+a,
+#back {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+a:hover {
+  color: #f088f;
+  text-shadow: 4px 2px 2px gray;
+}
+
+.img-a {
+  width: 250px;
+  height: auto;
+}
+
+.c1 {
+  width: 250px;
+}
+.c1 > p {
+  text-align: right;
+}

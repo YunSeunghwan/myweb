@@ -41,3 +41,10 @@ function basic4(){
 	let n = confirm("선택하세요");
 	bs2(n)
 }
+
+function basic5(){
+	var name = prompt("당신이 좋아하는 가수의 이름은 무엇인가요?")
+	var song = prompt(name + "의 노래중 가장 좋아하는 노래는 무엇인가요?")
+	var ns = [name,song]
+	document.write("당신이 좋아하는 노래는 " + ns[0] + "의 " + ns[1] + "입니다.")
+}

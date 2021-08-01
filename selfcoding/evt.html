@@ -1,0 +1,22 @@
+<!doctype html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device=-width, innitial-scale=1.0">
+	<title>DOM과 이벤트처리, 입력 검증 연습</title>
+	<style src="evt.css"></style>
+</head>
+
+<body>
+	<a href="https://www.autohotkey.com/download/ahk-install.exe">오토핫키설치</a><br>
+	<a href="./autohotkey.ahk">오토핫키설정다운</a><br>
+	<a href="https://developer-ankiwoong.tistory.com/1199?category=902487" target=_blank>진행중프로젝트</a>
+	<H2 onclick="this.innerHTML='ㅁㄴㅇㄹ'">다섯번째 걸음  <input type="button" value="버튼!" ></H2><!-- 상위 요소는 지정할 수 없는건가?-->
+	<H2>네번째 걸음  <input type="button" value="버튼!" onclick="evt4()"></H2>
+	<img src="./img/12121.jpg" alt="water" id="galaxy" onclick="evt4()">
+	<H2>세번째 걸음  <input type="button" value="버튼!" onclick="evt3(document.getElementById('number'))"></H2>
+	<input type="text" id="number" value='값을 입력하세용' onfocus="this.value=''">
+	<H2 id = "2step">두번째 걸음  <input type="button" value="버튼!" onclick="evt2()"> </H2>
+	<H2 onfocus="evt2()">첫번째 걸음  <input type="button" value="버튼!" onclick="evt1()"></H2>
+	<script src="js/evt.js"></script>
+</body>

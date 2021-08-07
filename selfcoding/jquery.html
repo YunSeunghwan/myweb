@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Quiz 1</title>
+	<script src = "https://code.jquery.com/jquery-3.5.1.js" integrity = "sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			// $("#button1").click(function(){
+			// 	$("#target").hide();
+			// });
+			// $("#button2").click(function(){
+			// 	$("#target").show();
+			// });
+			// $("#text").keyup(function(){
+			// 	$("#target").text($("#text").val());
+			// })
+			$("#right").click(function(){
+				$("#jquery").animate({left: '100px'});
+			});
+			$("#left").click(function(){
+				$("#jquery").animate({right: '100px'});
+			});
+		});
+	</script>
+</head>
+	
+<body>
+	<!-- <p id="target">
+		이것은 p 요소입니다
+	</p>
+	<button id="button1">
+		감추기
+	</button>
+	<button id="button2">
+		보이기
+	</button> -->
+	<!-- <input type="text" name="text" id="text">
+	<p id="target">
+	</p> -->
+	<button id="left">
+		&lt;&lt;
+	</button>
+	<button id="right">
+		&gt;&gt;
+	</button><br/><!-- <br>하고<br/>의 차이가 뭐지 -->
+	<img id="jquery" src="img/jquery.png" width="200px" alt="jquery" style="position: relative; padding-left; 100px;">
+	
+</body>
+</html>

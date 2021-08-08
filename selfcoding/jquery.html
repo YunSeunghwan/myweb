@@ -6,29 +6,62 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>jQuery Quiz 1</title>
 	<script src = "https://code.jquery.com/jquery-3.5.1.js" integrity = "sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<style>
+		div {
+			background-color: #bca;
+			width: 100px;
+			border: 1px solid green;
+		}
+		p {
+			background-color: #F00;
+			width: 11em;
+		}
+	</style>
 	<script>
 		$(document).ready(function() {
-			// $("#button1").click(function(){
-			// 	$("#target").hide();
-			// });
-			// $("#button2").click(function(){
-			// 	$("#target").show();
-			// });
-			// $("#text").keyup(function(){
-			// 	$("#target").text($("#text").val());
-			// })
+			$("#button1").click(function(){
+				$("#target").hide();
+			});
+			$("#button2").click(function(){
+				$("#target").show();
+			});
+			$("#text").keyup(function(){
+				$("#targetp").text($("#text").val());
+			})
 			$("#right").click(function(){
 				$("#jquery").animate({left: '100px'});
 			});
 			$("#left").click(function(){
 				$("#jquery").animate({right: '100px'});
 			});
+			$("#button3").click(function() {
+				$("block").animate({
+					width: "200px",
+					height: "50px",
+					fontSize: "40px",
+					marginLeft: "50px",
+					borderTopWidth: "10px",
+					borderLeftWidth: "10px"
+			});
 		});
 	</script>
 </head>
 	
 <body>
-	<!-- <p id="target">
+	<script>$(document).ready(function(){
+		$("#button3").click(function(){
+			$("block").animate({
+				width: "200px",
+				height: "50px",
+				fontSize: "40px",
+				marginLeft: "50px",
+				borderTopWidth: "10px",
+				borderLeftWidth: "10px"
+			});
+		});
+	});
+	</script>
+	<p id="target">
 		이것은 p 요소입니다
 	</p>
 	<button id="button1">
@@ -36,17 +69,23 @@
 	</button>
 	<button id="button2">
 		보이기
-	</button> -->
-	<!-- <input type="text" name="text" id="text">
-	<p id="target">
-	</p> -->
+	</button>
+	<input type="text" name="text" id="text">
+	<p id="targetp">
+	</p>
 	<button id="left">
 		&lt;&lt;
 	</button>
 	<button id="right">
 		&gt;&gt;
-	</button><br/><!-- <br>하고<br/>의 차이가 뭐지 -->
+	</button><br/>
 	<img id="jquery" src="img/jquery.png" width="200px" alt="jquery" style="position: relative; padding-left; 100px;">
-	
+	<br>
+	<button id="button3">
+		&gt;&gt; Run
+	</button>
+	<div id="block">
+		Hello!
+	</div>
 </body>
 </html>

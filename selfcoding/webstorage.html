@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+	
+<head>
+	<script src="js/includeHTML.js"></script>
+	<title>Web Storage Quiz</title>
+	<style>
+		#local1 {background-color : RGB(255,0,0);	}
+		#local2 {background-color : RGB(0,255,255);	}
+	</style>
+</head>
+<body>
+	<input type="text" id="local1"><button onclick="localSave()">
+	로컬 스토리지 저장
+	</button><br/>
+	<input type="text" name="local" id="local2"><button onclick="localCall()">
+	로컬 스토리지 조회
+	</button>
+	<hr>
+	<input type="text" name="session1" id="session1"><button onclick="sessionSave()">
+	세션 스토리지 저장
+	</button><br/>
+	<input type="text" name="session2" id="session2"><button onclick="sessionCall()">
+	세션 스토리지 조회
+	</button>
+	
+	<script>
+		function localSave() {
+			var input = document.getElementById("local1");
+			localStorage.setItem("loc1", input.value);
+		}
+		
+		function localCall() {
+			var localValue = localStorage.getItem("loc1");
+			document.getElementById("local2").value = localValue;
+		}
+		
+		function sessionSave() {
+			var input = document.getElementById("session1");
+			sessionStorage.setItem("session1", input.value);
+		}
+		
+		function sessionCall() {
+			var sessionValue = sessionStorage.getItem("session1");
+			document.getElementById("session2").value = sessionValue;
+		}
+	</script>
+	
+</body>
+</html>
